@@ -26,9 +26,12 @@
 - (void)getCourses:(NSString *)selectedCourseAbbr
 {
     NSString *urlString = [NSString stringWithFormat:@"http://api.purdue.io/odata/Courses?$filter=Subject/Abbreviation eq '%@'&$orderby=Number asc", selectedCourseAbbr];
+    
+    // this is some hacky string manipulation to make @{urlString} a valid URL
     urlString = [urlString stringByReplacingOccurrencesOfString:@" " withString:@"%20"];
     urlString = [urlString stringByReplacingOccurrencesOfString:@"$" withString:@"%24"];
     urlString = [urlString stringByReplacingOccurrencesOfString:@"'" withString:@"%27"];
+    
     NSLog(@"%@", urlString);
     NSURL *url = [NSURL URLWithString:urlString];
     NSURLRequest *request = [NSURLRequest requestWithURL:url];
