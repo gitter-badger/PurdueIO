@@ -6,21 +6,21 @@
 //  Copyright (c) 2015 vnev. All rights reserved.
 //
 
-#import "CourseTableViewController.h"
+#import "SubjectTableViewController.h"
 #import "AFNetworking.h"
 
-@interface CourseTableViewController ()
+@interface SubjectTableViewController ()
 
-@property (strong, nonatomic) NSArray *courses;
+@property (strong, nonatomic) NSArray *subjects;
 
 @end
 
-@implementation CourseTableViewController
+@implementation SubjectTableViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self getCourseData];
-    self.filteredSubjectsArray = [NSMutableArray arrayWithCapacity:[self.courses count]];
+    self.filteredSubjectsArray = [NSMutableArray arrayWithCapacity:[self.subjects count]];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -37,9 +37,9 @@
         
         NSArray *unsorted = [responseObject objectForKey:@"value"];
         NSArray *descriptor = [NSArray arrayWithObject:[NSSortDescriptor sortDescriptorWithKey:@"Abbreviation" ascending:YES]];
-        self.courses = [unsorted sortedArrayUsingDescriptors:descriptor];
+        self.subjects = [unsorted sortedArrayUsingDescriptors:descriptor];
 
-        NSLog(@"Array: %@", self.courses);
+        NSLog(@"Array: %@", self.subjects);
         [self.tableView reloadData];
         
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
@@ -62,7 +62,7 @@
     if (tableView == self.searchDisplayController.searchResultsTableView) {
         return [self.filteredSubjectsArray count];
     }
-    return [self.courses count];
+    return [self.subjects count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -72,7 +72,7 @@
     if (tableView == self.searchDisplayController.searchResultsTableView) {
         temp = [self.filteredSubjectsArray objectAtIndex:indexPath.row];
     } else {
-        temp = [self.courses objectAtIndex:indexPath.row];
+        temp = [self.subjects objectAtIndex:indexPath.row];
     }
 
     cell.textLabel.text = [temp objectForKey:@"Abbreviation"];
@@ -85,7 +85,7 @@
 {
     [self.filteredSubjectsArray removeAllObjects];
     NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF.name contains[c] %@", searchText];
-    self.filteredSubjectsArray = [NSMutableArray arrayWithArray:[self.courses filteredArrayUsingPredicate:predicate]];
+    self.filteredSubjectsArray = [NSMutableArray arrayWithArray:[self.subjects filteredArrayUsingPredicate:predicate]];
 }
 
 - (BOOL)searchDisplayController:(UISearchDisplayController *)controller shouldReloadTableForSearchString:(NSString *)searchString

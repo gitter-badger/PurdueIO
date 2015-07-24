@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface CourseTableViewController : UITableViewController <UISearchDisplayDelegate, UISearchBarDelegate>
+@interface SubjectTableViewController : UITableViewController <UISearchDisplayDelegate, UISearchBarDelegate>
 
 // TODO: filter subjects/courses available via term
 // @property (strong, nonatomic) NSString *term;
