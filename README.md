@@ -1,5 +1,7 @@
 # PurdueIO
 
+[![Join the chat at https://gitter.im/vnev/PurdueIO](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/vnev/PurdueIO?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 This is a WIP iOS application for Purdue.io. It utilizes `Purdue.io`'s API to gather JSON data.
 
 
