@@ -14,4 +14,4 @@ Installation is simple. `cd` into the directory containing the `.xcodeproj` file
 
 Here's a really shit GIF of it working:
 
-![](http://i.imgur.com/vhs4E18.gifv)
+![gif](http://i.imgur.com/vhs4E18.gifv)
