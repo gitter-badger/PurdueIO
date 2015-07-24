@@ -18,7 +18,6 @@
 		2E85760E1B62419200D06F41 /* SubjectTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E85760D1B62419200D06F41 /* SubjectTableViewController.m */; };
 		2E8576101B62518C00D06F41 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 2E85760F1B62518C00D06F41 /* README.md */; };
 		2E8576131B62597600D06F41 /* CoursesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8576121B62597600D06F41 /* CoursesTableViewController.m */; };
-		2E8576151B62728600D06F41 /* app-demo.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2E8576141B62728600D06F41 /* app-demo.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,7 +49,6 @@
 		2E85760F1B62518C00D06F41 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2E8576111B62597600D06F41 /* CoursesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoursesTableViewController.h; sourceTree = "<group>"; };
 		2E8576121B62597600D06F41 /* CoursesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoursesTableViewController.m; sourceTree = "<group>"; };
-		2E8576141B62728600D06F41 /* app-demo.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; name = "app-demo.gif"; path = "../app-demo.gif"; sourceTree = "<group>"; };
 		4E757BB7D473B251B03200A7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		9E12BAC5DDFBE9C78E6DD3D6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A86EC4192B94882984CDB29F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -87,7 +85,6 @@
 		2E2E05851B62273900661B90 = {
 			isa = PBXGroup;
 			children = (
-				2E8576141B62728600D06F41 /* app-demo.gif */,
 				2E85760F1B62518C00D06F41 /* README.md */,
 				2E2E05901B62273A00661B90 /* PurdueIO */,
 				2E2E05AA1B62273A00661B90 /* PurdueIOTests */,
@@ -244,7 +241,6 @@
 				2E2E059D1B62273A00661B90 /* Main.storyboard in Resources */,
 				2E2E05A21B62273A00661B90 /* LaunchScreen.xib in Resources */,
 				2E2E059F1B62273A00661B90 /* Images.xcassets in Resources */,
-				2E8576151B62728600D06F41 /* app-demo.gif in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

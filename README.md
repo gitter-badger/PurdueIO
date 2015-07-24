@@ -11,3 +11,7 @@ This is a WIP iOS application for Purdue.io. It utilizes `Purdue.io`'s API to ga
 ## How To Install
 
 Installation is simple. `cd` into the directory containing the `.xcodeproj` file (from the command line), and run `pod install`. Cocoapods will automatically fetch and build AFNetworking. After installing, open and use the `.xcworkspace` file for working on the project.
+
+Here's a really shit GIF of it working:
+
+![](http://i.imgur.com/vhs4E18.gifv)
