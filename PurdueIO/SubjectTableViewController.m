@@ -8,6 +8,7 @@
 
 #import "SubjectTableViewController.h"
 #import "AFNetworking.h"
+#import "CoursesTableViewController.h"
 
 @interface SubjectTableViewController ()
 
@@ -84,7 +85,7 @@
 - (void)filterContentsForSearchText:(NSString *)searchText scope:(NSString *)scope
 {
     [self.filteredSubjectsArray removeAllObjects];
-    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF.name contains[c] %@", searchText];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:@"name contains[c] %@", searchText];
     self.filteredSubjectsArray = [NSMutableArray arrayWithArray:[self.subjects filteredArrayUsingPredicate:predicate]];
 }
 
@@ -100,5 +101,13 @@
     return YES;
 }
 
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+    NSIndexPath *indexPath = [self.tableView indexPathForSelectedRow];
+    CoursesTableViewController *ctrlr = (CoursesTableViewController *)segue.destinationViewController;
+    NSDictionary *temp = [self.subjects objectAtIndex:indexPath.row];
+    NSString *selectedSubAbbr = [temp objectForKey:@"Abbreviation"];
+    ctrlr.selectedCourse = selectedSubAbbr;
+}
 
 @end

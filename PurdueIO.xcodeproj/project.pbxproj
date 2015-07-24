@@ -17,6 +17,7 @@
 		2E2E05AE1B62273A00661B90 /* PurdueIOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E2E05AD1B62273A00661B90 /* PurdueIOTests.m */; };
 		2E85760E1B62419200D06F41 /* SubjectTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E85760D1B62419200D06F41 /* SubjectTableViewController.m */; };
 		2E8576101B62518C00D06F41 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 2E85760F1B62518C00D06F41 /* README.md */; };
+		2E8576131B62597600D06F41 /* CoursesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2E8576121B62597600D06F41 /* CoursesTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +47,8 @@
 		2E85760C1B62419200D06F41 /* SubjectTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubjectTableViewController.h; sourceTree = "<group>"; };
 		2E85760D1B62419200D06F41 /* SubjectTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubjectTableViewController.m; sourceTree = "<group>"; };
 		2E85760F1B62518C00D06F41 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2E8576111B62597600D06F41 /* CoursesTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoursesTableViewController.h; sourceTree = "<group>"; };
+		2E8576121B62597600D06F41 /* CoursesTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoursesTableViewController.m; sourceTree = "<group>"; };
 		4E757BB7D473B251B03200A7 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		9E12BAC5DDFBE9C78E6DD3D6 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		A86EC4192B94882984CDB29F /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
@@ -109,6 +112,8 @@
 				2E2E05991B62273A00661B90 /* ViewController.m */,
 				2E85760C1B62419200D06F41 /* SubjectTableViewController.h */,
 				2E85760D1B62419200D06F41 /* SubjectTableViewController.m */,
+				2E8576111B62597600D06F41 /* CoursesTableViewController.h */,
+				2E8576121B62597600D06F41 /* CoursesTableViewController.m */,
 				2E2E059B1B62273A00661B90 /* Main.storyboard */,
 				2E2E059E1B62273A00661B90 /* Images.xcassets */,
 				2E2E05A01B62273A00661B90 /* LaunchScreen.xib */,
@@ -286,6 +291,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E8576131B62597600D06F41 /* CoursesTableViewController.m in Sources */,
 				2E2E059A1B62273A00661B90 /* ViewController.m in Sources */,
 				2E2E05971B62273A00661B90 /* AppDelegate.m in Sources */,
 				2E8576101B62518C00D06F41 /* README.md in Sources */,
